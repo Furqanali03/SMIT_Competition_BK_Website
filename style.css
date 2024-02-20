@@ -8,7 +8,7 @@
 }
 
 html , body{
-    /* background-color: #000; */
+    background-color: #F4EBDC;
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
     font-weight: 300;
@@ -22,6 +22,7 @@ html , body{
 /* Navigation */
 
 nav{
+    background-color: #F4EBDC;
     box-shadow: 5px 5px 5px rgba(245, 98, 98, 0.05);
     position: sticky;
     top: 0;
@@ -58,19 +59,10 @@ nav{
     margin: 0 auto;
 }
 
-.search-bar input[type='search']{
-    background: white;
-    width: 50vw;
-    height: 15vh;
-    /* margin-left: 1rem; */
-    font-size: 0.9rem;
-    border: 1px solid blue;
-    border-radius: 5px;
-    text-align: center;
 
-}
 
 .gap{
+    display: block;
     padding: 0 5px;
 }
 
@@ -78,24 +70,98 @@ nav{
     display: flex;
 }
 
+.location{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 200;
+}
+
+/* Hero section  */
+
+.hero{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 100px;
+}
+
+.img1{
+    width: 700px;
+}
+
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+
+.hero_content h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #502314;
+    font-size: 62px;
+    /* line-height: 1; */
+    font-weight: 800;
+}
 
 
+/* cards */
 
+h5{
+    color: #502314 !important;
+    font-weight: 600;
+
+}
+
+p{
+    color: #502314 !important;
+}
+
+.img2{
+    width: 200px;
+}
+
+.font{
+    font-size: 40px !important;
+}
+
+.img3{
+    width: 150px;
+}
+
+.foot{
+    background-color: #502314;
+    color: #F4EBDC;
+    text-align: center;
+    padding-top: 8px;
+    min-height: 40px;
+
+}
 
 @media (max-width:786px) {
 
-    .btnn{
-        position: relative;
-    
+    .gap{
+        display: none !important;
     }
 
 
     .logo{
-        flex-direction: column;
+        width: 40px;
+        justify-self: end;
+    
     }
 
+    .hero_content{
+        display: none !important;
+    }
 
+    .img1{
+        width: 80vw;
+        align-items: center;
+    }
 
-
+    .img-2{
+        display: none !important;
+    }
 
 }
